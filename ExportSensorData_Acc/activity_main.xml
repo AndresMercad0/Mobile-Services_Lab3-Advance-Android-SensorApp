@@ -10,32 +10,36 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="86dp"
-        android:text="@string/textview"
+        android:layout_marginTop="138dp"
+        android:layout_marginBottom="145dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Start"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Button_Start"
-        android:layout_width="224dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="324dp"
-        android:layout_marginBottom="41dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="40dp"
         android:text="Start Record"
         app:layout_constraintBottom_toTopOf="@+id/Button_Stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/Button_Stop"
-        android:layout_width="230dp"
+        android:layout_width="256dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="139dp"
+        android:layout_marginBottom="118dp"
         android:text="Stop and Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Button_Start" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
